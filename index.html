@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="resources/styles.css" />
+<link rel="stylesheet" href="content/css/styles.css" />
+<title>Adoption of Linked Open Data at the BBC - BBC R&amp;D Lunch Lecture June 2011</title>
+</head>
+<body>
+<header>
+    <h1>Adoption of Linked Open Data at the BBC</h1>
+    <nav>
+        <ul>
+            <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
+            <li><span id="slide-number"></span><span id="slide-total"></span></li>
+            <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
+        </ul>
+    </nav>
+</header>
+<div id="deck">
+	<section>
+        <hgroup>
+            <h1>Adoption of Linked Open Data<br>
+            at the BBC</h1>
+        </hgroup>
+        <p>@moustaki – Yves Raimond, Programmes &amp; On Demand (/programmes)<br>
+          @olivierthereaux – Olivier Thereaux, R&amp;D Prototyping
+          </p>
+            <!-- Introduction. This talk is mostly for people whose eyes glaze over whenever they hear the words "rdf" or "semantic web"  -->
+    </section>    
+    <section>
+      <h2>“Inform, Educate and Entertain”</h2>
+      <p class="bigPic"><img src="content/media/Master_BBC_Logo_black.jpg" width="600" height="171" alt="BBC Logo"></p>
+      <!-- Quick mention of the long history of the BBC as public service broadcaster ,founded 1922 -->
+    </section>
+    <section>
+      <h2>Wealth of content and knowledge</h2>
+      <!-- Such a history and activity means that BBC has produced, commissioned, transmitted and archived a lot, lot of content, data, information -->
+    </section>
+    <section>
+        <h3>Radio since 1922</h3>
+        <p class="bigPic"><img src="content/media/BBC-Eagle.jpg" width="500" alt="BBC Eagle"></p>
+        <!-- from its beginnings in the 1920s in radio. Now 10 national radio channels and more than 40 in the nations and regions  -->
+      </section>
+      <section>
+        <h3>TV since 1930</h3>
+        <p class="bigPic"><img src="content/media/BBC-Tuning-Signal.jpg" width="500" alt="BBC Tuning Signal"></p>
+        <!-- TV broadcast since the 1930s -->
+      </section>
+    <section>
+      <h3>On the Web since 1994<h3>
+      <p class="bigPic"><img src="content/media/BBC-1994.jpg" alt="BBC 1994"></p>
+      <!-- On the Web since 1994. that's a lot of web-history too, we've been doing this for a while. -->
+    </section>
+    <section>
+      <h3>… and some journalism too<h3>
+      <p class="bigPic"><img src="content/media/BBCNews.png" alt="BBC News"></p>
+      <!--  Mention long-standing cultur eof getting news right, rather than first -->
+    </section>
+    <section>
+      <h3 class="bigPic">Bespoke Web Sites<h3>
+      <p class="bigPic"><img src="content/media/DrWho.jpg" alt="Doctor Who official site"></p>
+      <!-- One way to do "web" when you are a broadcaster is to tailor great bespoke sites for your star shows -->
+    </section>
+      <section>
+        <h3>1000 to 1500 programmes a day</h3>
+        <p class="bigPic"><img src="content/media/BBC-Color.jpg" width="500" alt="BBC Color"></p>
+        <!-- Not to mention,  when you transmit hundreds of programmes a day, how could that scale? -->
+    </section>
+    <section>
+      <h3>Bespoke: Cost/Benefit?<h3>
+      <p class="bigPic"><img src="content/media/DrWhoWiki.png" alt="Doctor Who unofficial wiki, more than 21,000 articles!"></p>
+      <!-- The problem is that when you do this for your star show, you may not manage and provide as much depth and breadth of data to beat your own fans at this game -->
+    </section>
+    <section>
+        <h2>/programmes</h2>
+        <ul>
+          <li class="action">Automated programme support</li>
+          <li class="action">Aggregating internal metadata about our programmes</li>
+          <li class="action">Web identifier for each BBC programme - multiple representations</li>        
+    </section>
+    <section>
+    <h2>/programmes - what for?</h2>
+    <ul>
+      <li class="action">Persistence</li>
+      <li class="action">"Linkability"</li>
+      <li class="action">Discoverability</li>
+    </ul>
+    <p class="action">The BBC is the authority for data about our programmes
+    <br>
+    What about the rest? (music, nature, etc.?)</p>
+    
+    </section>
+    <section>
+      <h2>Web as a Content Management System</h2>
+      <p class="solo">Don't reinvent, link!</p>
+      <!-- An alternative to such a losing battle is to use the Web as your CMS. Let's see with an example what it means -->
+    </section>
+    <section>
+      <p class="bigPic"><img src="content/media/TomWaits.png"  title="As major broadcaster, the BBC has a wealth of data about many topics. Here: a musician" alt="Tom Waits page on BBC Music"></p>
+      <!-- The BBC Music Website has  a content-rich offering. Not surprising when you have 10 major national radio stations, many more local stations, and a lot of music programmes in your TV schedule. But it doesn't mean you have to manage everything from bios to discography from scratch  -->
+    </section>
+    
+    <section>
+      <p class="solo">Build upon Open Data Repositories</h3>
+      </section>
+      <section>
+      <h3 class="bigPic">Aggregate and Contribute</h3>
+      <p class="bigPic"><img src="content/media/Aggregate-Link.png" title="The BBC uses, and contributes back to, other trusted, comprehensive sources of data" alt="Aggregate Link"></p>
+      <!-- Instead of trying to "beat" sites such as wikipedia or musicbrainz, the BBC aggregates data from these sources, and contributes (with the rest of the community) back -->
+    </section>
+    <section>
+      <p class="bigPic"><img src="content/media/Identifiers.png" title="Working through aggregation can help figure out your identifies and URIs" alt="Identifiers"></p>
+      <!-- Many benefits to such aggregation - from lots of great data to a good way to choose our URIs and identifiers -->
+    </section>
+    <section>
+      <p class="bigPic"><img width="600" src="content/media/WWW-Share.png" title="Share" alt="WWW: Share what we know"></p>
+      <!-- The work done by the BBC is then focused on what it does and knows best -->
+    </section>
+    <section>
+      <h2>Add value</h2>
+      <ul>
+        <li class="action">Publish</li>
+        <li class="action">Expose</li>
+        <li class="action">Build great experience</li>
+      </ul>
+      <p class="action">“Our website is the API”</p>
+      <!-- We add our value on our website, and in turn expose the result. Can build a great experience too, linked data doesn't have to be ugly -->
+    </section>
+    <section>
+      <p class="bigPic"><img src="content/media/SEO.png" alt="Reap with better findability and recognised value"></p>
+      <!-- Everyone benefits from this... e.g SEO of some of our nature web pages -->
+    </section>
+    <section>
+      <h2>Build the ecosystem</h2>
+      <!-- These principles are more about building an ecosystem than just web sites -->
+      <ul>
+        <li class="action">"Design for your least-able user"</li>
+        <li class="action">Data boosts SEO</li>
+        <li class="action">Outsourcing innovation</li>
+      </ul>
+      </section>
+      <section>
+        <h2>Open Innovation</h2>
+      <ul>
+          <li class="action">New UX ideas</li>
+          <li class="action">New idea of data sources to integrate</li>
+          <li class="action">New prototypes and products pushing traffic towards us</li>
+      </ul>
+      <!-- A number of prototypes built by third parties around our feeds were an inspiration for products the BBC ended up building -->
+  </section>
+    <section>
+      <h2>Build the ecosystem</h2>
+      <!-- These principles are more about building an ecosystem than just web sites -->
+      <p>Inside and Out</p>
+      <ul>
+        <li class="action">“BBC large enough to operate as an ecosystem”</li>
+      </ul>
+      <!-- BBC has a history of opening its data for consumption, but what's really interesting is that BBC is such a large organisation, it qualifies as an ecosystem by itself -->
+      <!-- Dealing with silos inside an organisation is thus done in a fairly similar way as you would with a developer ecosystem -->
+  </section>
+    <section>
+      <h2>Loosely coupled development</h2> 
+      <ul>
+        <li class="action">Music consumes from Programmes</li>
+        <li class="action">Programmes consumes from Music</li>
+        <li class="action">Nature consumes from Programmes</li>
+      </ul>
+      <!-- loosely coupled development is done with minimal dependencies but maximal effect  -->
+      </section>
+
+      <section>
+        <h2>Linked Data principles</h2> 
+      <ul>
+        <li>Use URIs as names for things</li>
+        <li>… HTTP URIs so people can look up those names</li>
+        <li>Behind URIs: provide useful information, using standards</li>
+        <li>Include links to other URIs, so that they can discover more things</li>
+      </ul>
+      <!-- Tech-wise, this is all done by adopting the principles of linked data -->
+    </section>
+    <section>
+      <h2 class="bigPic">The age of pointing-at-things</h2>
+      <p class="bigPic"><img src="content/media/lego.jpg"  alt="Lego brick"></p>
+      <p style='font-size: 2em; font-style: italic; text-align: center'><a href="http://www.flickr.com/photos/donsolo/2362796995/">Photo: donsolo on flickr</a></p>
+    </section>
+    <section>
+      <h2 class="bigPic">Dynamic Semantic Publishing</h2>
+      <p class="bigPic"><img src="content/media/WC2010.png" title="Triple Stores used for Football World Cup 2010" alt="BBC Football World Cup 2010 homepage"></p>
+      <!-- … and adopting some of the technologies of the linked data world. Example: BBC's web offering for the Football world cup 2010 was built upon a triple store with internal query endpoints -->
+    </section>
+    <section>
+      <h3>Link (more, better)</h3>
+      <p class="solo">Technology choices are not (culturally) neutral</p>
+      <!-- Technologies are chose from a cultural bias, but they also inform our culture by making some things easier and some a little harder -->
+    </section>
+    <section>
+      <h2>What the future holds</h2>
+      <ul>
+        <li class="action">Digital Public Space</li>
+        <li class="action">Data Journalism</li>
+        <li class="action">Identity and User Data</li>
+      </ul>
+      <!-- The future - linked data at the heart of a lot of what we do  -->
+    </section>
+    <section>
+      <h2>… what we need</h2>
+      <ul>
+        <li class="action">better licenses</li>
+        <li class="action">keep working on infrastructure</li>
+        <li class="action">Use and publicise all this data!</li>
+      </ul>
+      <!-- If we want 3rd parties to use the data, a clearer license may help. But we can already (internally)  use this wealth  -->
+    </section>
+    
+	  <section>
+      <p class="solo">Thank You</p>
+          </section>
+</div>
+<!-- /deck -->
+<footer>
+  <p id="footerCredits"><img src="content/images/BBC-mini.png" alt="BBC" /> Future Media</p>
+  <p id="footerDate">&copy; MMXI</p>
+</footer>
+
+<script src="resources/jquery-1.4.2.min.js"></script>
+<script src="resources/htmlSlides.js"></script>
+<script>
+//This is just to demo the custom events
+$('html').bind('newSlide', function(e,id) { console.log('New slide event, slide number ' + id)});
+$('html').bind('newAction', function(e,id) { console.log('New action event, action number ' + id)});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* HTML5 Slideshow by Rob Flaherty 
+    http://github.com/robflaherty/html-slideshow
+    Adapted for the BBC by Olivier Thereaux <olivier.thereaux@bbc.co.uk>
+*/
+
+body{ background:#fff; color: #333; font-family: 'Gill Sans' , Arial, Helvetica; }
+#deck h1 {  font-size: 72px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); 
+    font-weight: 100; margin: 0.5em 0 1.5em 0; text-align: center;}
+.keepAtTop {margin: .5em 0;}
+#deck h2, #deck h3 { text-align: center;  font-weight: 100; margin: 0.5em 0 1.5em 0; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); }
+#deck h2 {font-size: 60px;}
+#deck h3 { font-size: 42px;}
+#deck h2.bigPic, #deck h3.bigPic {margin: 0.5em 0 15px 0 !important} 
+#deck .solo { color: #333; font-size: 42px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); 
+        font-weight: 100; text-align: center; margin: 2.5em 0 1.5em 0;}
+#deck h1#firstTitle { font-family: Cochin, Times;}
+p.bigPic {padding: 15px; text-align: center;}
+p.bigPic img { margin: auto;}
+p.bigPic img.maxwidth { width: 100%;}
+#deck p { padding: .5em;}
+#deck li { margin-left: 2em;}
+#deck p, #deck li { font-size: 42px; color: #333; font-weight: 300; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.8); }
+#deck li {line-height: 200%;}
+footer {position: fixed; bottom:0; width: 100%; margin:0; padding: .5em; background: #212121; color: white;} 
+#footerCredits {display: inline; font-weight: 100; font-size: 16px; float: left; padding-left: 0;}
+#footerCredits img {display: inline; vertical-align: middle; padding-bottom: 3px;}
+#footerDate {font-size: 18px;
+font-weight: 100;  display: inline; font-size: 18px;
+font-weight: 100; font-size: 16px; float: right; padding: 3px 1em;}
