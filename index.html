@@ -150,6 +150,48 @@
     </ul>
     <p class="action">The BBC is the authority for data about our programmes</p>    
     </section>
+    <section>
+        <p class="bigPic"><img src="content/media/CriminalJustice.png" alt="Criminal Justice, BBC One"></p>
+    </section>
+    <section>
+        <h2>/programmes v2 - data views</h2>
+        <ul>
+            <li>Producing JSON, XML, RDF representations</li>
+            <li>Uses declarative mappings in the models</li>
+            <li>Ensures objects are consistently represented across feeds</li>
+            <li>Uses EasyRdf for RDF views</li>
+        </ul>
+    </section>
+    <section>
+        <h2>/programmes v2 - template testing</h2>
+        <ul>
+            <li>Old stack: controller tests are also template tests</li>
+            <li>Old stack: relies on CSS selectors</li>
+            <li><a href="http://blog.dbtune.org/post/2011/06/28/Using-RDFa-for-testing-templates">New stack</a>: Unit tests for templates</li>
+            <li>Relying on extracted data (RDFa) rather than presentational elements</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Testing the A-Z</h3>
+        <pre>
+    public function testLetterSearch()
+    {
+        $this->setDefaultComponent('/components/atoz/letters');
+        $data = (object) array(
+            "by"      => "by",
+            "search"  => "b",
+            "slice" => "player",
+            "letters" => array('@', 'a', 'b', 'c'),
+        );
+
+        $this->assertTriples($data, array(
+            array('/programmes/a-z/by/b', 'rdfs:seeAlso', '/programmes/a-z/by/%40/player'),
+            array('/programmes/a-z/by/b', 'rdfs:seeAlso', '/programmes/a-z/by/a/player'),
+            array('/programmes/a-z/by/b', 'rdfs:seeAlso', '/programmes/a-z/by/c/player'),
+        ));
+    }
+        </pre>
+    </section>
     
     <section>
       <h2>“Our website is the API”</h2>
@@ -159,11 +201,13 @@
         <li class="action">Build great experience</li>
       </ul>
     </section>
+<!--
     <section>
       <h3 class="bigPic">Profit!</h3> 
       <p class="bigPic"><img src="content/media/SEO.png" alt="Reap with better findability and recognised value"></p>
       <!-- Everyone benefits from this... e.g SEO of some of our nature web pages -->
     </section>
+-->
     <section>
       <h2>Build the ecosystem</h2>
       <!-- These principles are more about building an ecosystem than just web sites -->
